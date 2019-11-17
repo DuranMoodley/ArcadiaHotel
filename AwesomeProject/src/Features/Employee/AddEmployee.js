@@ -17,7 +17,7 @@ import Utils from '../../Utils/utils'
 import { useGlobal } from "reactn";
 import Spinner from 'react-native-loading-spinner-overlay';
 import CommonStyles from '../../CommonComponents/index'
-
+//import 'react-native-gesture-handler'
 
 export default function index(props) {
 

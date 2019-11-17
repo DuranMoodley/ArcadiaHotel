@@ -2,6 +2,7 @@ import React, { Component, useState, useEffect } from 'react';
 import {Dimensions, View, Text, ActivityIndicator, Alert, Image,ImageBackground, TouchableOpacity} from 'react-native';
 import { useGlobal } from 'reactn'
 import Utils from '../../Utils/utils'
+//import 'react-native-gesture-handler'
 function SplashScreen(props) {
   const [global, setGlobal] = useGlobal()
   const [state, setState] = useState({

@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 
 import { useGlobal } from 'reactn'
-
+//import 'react-native-gesture-handler'
 
 
 function LoginScreen(props) {

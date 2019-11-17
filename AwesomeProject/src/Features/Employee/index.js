@@ -16,7 +16,7 @@ import {
 import Spinner from 'react-native-loading-spinner-overlay';
 import { useGlobal } from 'reactn'
 import { NavigationEvents } from 'react-navigation'
-
+//import 'react-native-gesture-handler'
 import CommonStyles from '../../CommonComponents/index'
 
 function Employee(props) {
@@ -108,7 +108,7 @@ function Employee(props) {
               {/* <Image source={require('../../Images/qr_order.png')} style={styles.image} /> */}
               <View style={styles.cardContent}>
                 <Text style={styles.name}>{item.Name} {item.Surname}</Text>
-                <Text style={[styles.subheading,{color:'black'}]}>{item.EmployeeId}</Text>
+                {/* <Text style={[styles.subheading,{color:'black'}]}>{item.EmployeeId}</Text> */}
                 <Text style={[styles.subheading,item.Status === 'leave' ? {color:'red'}:{color:'black'}]}>{item.Status}</Text>
               </View>
             </TouchableOpacity>

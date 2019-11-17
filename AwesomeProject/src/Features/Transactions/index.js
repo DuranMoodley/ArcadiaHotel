@@ -13,13 +13,10 @@ import {
   RefreshControl,
   Dimensions
 } from 'react-native';
-
 import { useGlobal } from 'reactn'
-
 import { NavigationEvents } from 'react-navigation'
 //import Utils from '../../Utils/utils'
 import Spinner from 'react-native-loading-spinner-overlay';
-
 import CommonStyles from '../../CommonComponents/index'
 
 

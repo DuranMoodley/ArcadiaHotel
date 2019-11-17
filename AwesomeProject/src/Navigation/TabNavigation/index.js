@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native'
 import {createMaterialTopTabNavigator,MaterialTopTabBar} from 'react-navigation-tabs';
 //Import all the screens for Tab
 import Transactions from '../../Features/Transactions/index'
-
+//import 'react-native-gesture-handler'
 function SafeAreaMaterialTopTabBar (props) {
   return (
     <SafeAreaView style={{ flex: 0, backgroundColor: 'black' }}>
@@ -27,7 +27,7 @@ const TabScreen = createMaterialTopTabNavigator(
       title: 'Approved'
      }
     },
-    Declined: { screen: props => <Transactions {...props}  filterType={'Declined'}/>,
+    Declined: { screen: props => <Transactions {...props}  filterType={'Decline'}/>,
     navigationOptions: {
       title: 'Declined'
      }

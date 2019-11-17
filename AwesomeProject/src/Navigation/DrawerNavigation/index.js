@@ -1,7 +1,6 @@
 import React from 'react'
 
 //import { createDrawerNavigator, createStackNavigator } from 'react-navigation'
-import {createAppContainer } from 'react-navigation';
 import {createDrawerNavigator} from 'react-navigation-drawer';
 import {createStackNavigator} from 'react-navigation-stack';
 import {
@@ -15,7 +14,9 @@ import Icon from 'react-native-vector-icons/Ionicons'
 import CustomSidebarMenu from '../../CommonComponents/CommonSideMenu'
 import Employee from '../../Features/Employee/index'
 import Tabs from '../TabNavigation/index'
+//import 'react-native-gesture-handler'
 let width = Dimensions.get('window').width;
+
 function Drawer(props) {
 
   toggleDrawer = () => {

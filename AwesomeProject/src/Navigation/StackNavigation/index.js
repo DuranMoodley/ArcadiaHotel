@@ -14,7 +14,7 @@ import SaveEmployee from '../../Features/Employee/AddEmployee'
 import ViewEmployee from '../../Features/Employee/ViewEmployee'
 import EditEmployee from '../../Features/Employee/EditEmployee'
 import ViewClient from '../../Features/Transactions/ViewClient'
-
+//import 'react-native-gesture-handler'
 let width = Dimensions.get('window').width;
 const AppStack = createStackNavigator({
   Dashboard: {

@@ -18,7 +18,7 @@ import { useGlobal } from 'reactn'
 import Utils from '../../Utils/utils'
 import Spinner from 'react-native-loading-spinner-overlay';
 import CommonStyles from '../../CommonComponents/index'
-
+//import 'react-native-gesture-handler'
 let width = Dimensions.get('window').width;
 function index(props) {
 
@@ -56,7 +56,7 @@ function index(props) {
      
   }
 
-  const save = () => { 
+  const save = (status) => { 
 
    
     const fetchConfig = {
@@ -67,7 +67,7 @@ function index(props) {
     }
     };
    
-    fetch('http://duran.dx.am/UpdateClient.php?Id=' +global.clientSelect.Id+'&status=Approved', fetchConfig)
+    fetch('http://duran.dx.am/UpdateClient.php?Id=' +global.clientSelect.Id+'&status=' + status, fetchConfig)
     //.then(res)
     .then(e => {
    
@@ -132,9 +132,15 @@ function index(props) {
               {/* <Text style={styles.description}>Lorem ipsum dolor sit amet, saepe sapientem eu nam. Qui ne assum electram expetendis, omittam deseruisse consequuntur ius an,</Text> */}
               {
                   global.clientSelect.Status !== 'Approved' &&
-                  <TouchableOpacity style={styles.buttonContainer} onPress={() => { save()}}>
+                  <View>
+                  <TouchableOpacity style={styles.buttonContainer} onPress={() => { save('Approved')}}>
                   <Text style={{color:'white'}}>Approve</Text>  
                   </TouchableOpacity>  
+
+                   <TouchableOpacity style={styles.buttonContainer} onPress={() => { save('Decline')}}>
+                   <Text style={{color:'white'}}>Decline</Text>  
+                   </TouchableOpacity>
+                   </View>
               }
                                   
             </View>

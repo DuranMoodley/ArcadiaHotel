@@ -17,7 +17,7 @@ import { useGlobal } from 'reactn'
 import Utils from '../../Utils/utils'
 import Spinner from 'react-native-loading-spinner-overlay';
 import CommonStyles from '../../CommonComponents/index'
-
+//import 'react-native-gesture-handler'
 let width = Dimensions.get('window').width;
 function index(props) {
 
